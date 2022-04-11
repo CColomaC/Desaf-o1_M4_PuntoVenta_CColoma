@@ -19,10 +19,10 @@ public class PuntoVenta {
 	//constantes
 	public final static int OPCION_MENU_CREAR	 	= 1;
 	public final static int OPCION_MENU_LISTA 		= 2;
-	public final static int OPCION_MENU_ELIMINAR 	= 3;
-	public final static int OPCION_MENU_COMPRAR 	= 4;
+	public final static int OPCION_MENU_ELIMINAR 		= 3;
+	public final static int OPCION_MENU_COMPRAR 		= 4;
 	public final static int OPCION_MENU_VENTAS 		= 5;
-	public final static int OPCION_MENU_REPORTE 	= 6;
+	public final static int OPCION_MENU_REPORTE 		= 6;
 	public final static int OPCION_MENU_SALIR		= 7;
 	
 	public static void main(String[] args) {
@@ -63,7 +63,7 @@ public class PuntoVenta {
 					System.out.println("Saliendo!");
 					break;
 				default:
-					System.out.println("Opcion escogida no valida, inténtelo de nuevo");
+					System.out.println("Opcion escogida no valida, intÃ©ntelo de nuevo");
 					break;
 			}
 			
@@ -125,7 +125,7 @@ public class PuntoVenta {
 		verListaProductos();
 		// Pregunta al usuario el codigo de producto a comprar
 		scanner.nextLine(); // ataja \n de verListaProductos()
-		System.out.println("Escriba el código del producto que desea comprar: ");
+		System.out.println("Escriba el cÃ³digo del producto que desea comprar: ");
 		String codigo = scanner.nextLine();
 		
 		//Llama al metodo buscarProducto para definir el producto
@@ -140,13 +140,13 @@ public class PuntoVenta {
 		venta.agregarLineaDetalle(lineaDetalle);
 		
 		// Finalmente, pregunta si quiere agregar mas productos
-		System.out.println("¿Desea agregar más productos al carro? (si/no)");
+		System.out.println("Â¿Desea agregar mÃ¡s productos al carro? (si/no)");
 		
 		//equivalente a if(){}else{}
 		seguirAgregandoProductos = scanner.next().equalsIgnoreCase("SI") ? true : false;
 		}while (seguirAgregandoProductos == true);
 		
-		// Añade la venta al terminar de agregar los objetos al carro
+		// AÃ±ade la venta al terminar de agregar los objetos al carro
 		ventas.add(venta);
 		
 	}
@@ -168,7 +168,7 @@ public class PuntoVenta {
 		// Define el nombre del archivo y su contenido con Strings
 		String nombreArchivo = "REPORTE-VENTAS.csv";
 		
-		// Creación de un título.
+		// CreaciÃ³n de un tÃ­tulo.
 		String contenidoArchivo = "REPORTE VENTAS\n______________\n";
 
 		// Por cada venta realizada, anota la fecha, los productos vendidos y el total de cada venta.
@@ -182,7 +182,7 @@ public class PuntoVenta {
 		//Utiliza un try-catch para evitar que el programa se rompa.
 		try {
 			// Crea un objeto FileWriter, importado desde utilidades java
-			// Se encargará de crear el archivo a partir de los Strings nombreArchivo y contenidoArchivo
+			// Se encargarÃ¡ de crear el archivo a partir de los Strings nombreArchivo y contenidoArchivo
 			FileWriter writer = new FileWriter(nombreArchivo);
 			writer.write(contenidoArchivo);
 			writer.close();
@@ -219,7 +219,7 @@ public class PuntoVenta {
 		// toma el valor dado por un usuario y lo convierte a int 
 		int opcionSeleccionada = scanner.nextInt(); 
 		
-		// después lo retorna a main.
+		// despuÃ©s lo retorna a main.
 		return opcionSeleccionada;
 	}
 }
