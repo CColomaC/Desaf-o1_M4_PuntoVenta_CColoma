@@ -1,2 +1,2 @@
-# Desaf-o1_M4_PuntoVenta_CColoma
+# Desafio1_M4_PuntoVenta_CColoma
 Desafío1_M4_PuntoVenta_CColoma
