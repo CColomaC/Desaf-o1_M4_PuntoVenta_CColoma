@@ -60,7 +60,7 @@ public class PuntoVenta {
 					generarReporte();
 					break;
 				case OPCION_MENU_SALIR:
-					System.out.println("Saliendo!");
+					System.out.println("Hasta la vista baby!");
 					break;
 				default:
 					System.out.println("Opcion escogida no valida, inténtelo de nuevo");
@@ -205,7 +205,7 @@ public class PuntoVenta {
 	}
 
 	private static int menu() {
-		System.out.println("Punto de venta XXXX:\n"); // "\n" para salto de linea
+		System.out.println("Minimarket Nachita:\n"); // "\n" para salto de linea
 		System.out.println("1. Crear producto");
 		System.out.println("2. Ver lista de productos");
 		System.out.println("3. Eliminar producto");
